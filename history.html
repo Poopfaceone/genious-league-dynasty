@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>History - Under Construction</title>
+    <title>League History</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,19 +18,801 @@
                 <li><a href="draft.html">Draft Order</a></li>
                 <li><a href="constitution.html">Constitution</a></li>
                 <li><a href="history.html">History</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="construction-container">
-        <section class="construction-content">
-            <h2>History Page - Under Construction</h2>
-            <p>We're currently working on this page. Check back soon for updates!</p>
+    <main class="history-container">
+        <h2>League History</h2>
+        
+        <section class="champions-section">
+            <h3>Past Champions</h3>
+            <div class="champions-grid">
+                <div class="champion-card">
+                    <h4>2024 Season</h4>
+                    <div class="champion-info">
+                        <strong>Champion:</strong> Aaron (Raygun Moves)<br>
+                        <strong>Runner-up:</strong> David (Young Money)<br>
+                        <strong>Third Place:</strong> Miljan (Manojlovic)
+                    </div>
+                </div>
+                <!-- Add more champion cards for previous years as needed -->
+            </div>
+        </section>
+        
+        <section class="record-section">
+            <h3>League Records</h3>
+            
+            <div class="record-tabs">
+                <button class="tab-link active" onclick="openTab(event, 'head-to-head')">Head-To-Head</button>
+                <button class="tab-link" onclick="openTab(event, 'team-points')">Team Points</button>
+                <button class="tab-link" onclick="openTab(event, 'team-stats')">Team Statistics</button>
+            </div>
+            
+            <!-- Head-To-Head Tab -->
+            <div id="head-to-head" class="tab-content active">
+                <h4>Wins</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Wins</th>
+                    </tr>
+                    <tr>
+                        <td>Most Wins</td>
+                        <td>YOUNG MONEY</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>Most Wins in a Season, All Time</td>
+                        <td>Pants Party, Season 2016</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>Longest Streak</td>
+                        <td>RAYGUN moves ☝️</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Longest Streak, All Time</td>
+                        <td>Pants Party, Season 2016</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>Current Streak</td>
+                        <td>RAYGUN moves ☝️</td>
+                        <td>6</td>
+                    </tr>
+                </table>
+                
+                <h4>Losses</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Losses</th>
+                    </tr>
+                    <tr>
+                        <td>Most Losses</td>
+                        <td>Metaloid Maniacs</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>Most Losses, All Time</td>
+                        <td>Metaloid Maniacs, Season 2023</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Longest Streak</td>
+                        <td>Metaloid Maniacs</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>Longest Streak, All Time</td>
+                        <td>Metaloid Maniacs, Season 2023</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Current Streak</td>
+                        <td>Right back where we started</td>
+                        <td>5</td>
+                    </tr>
+                </table>
+                
+                <h4>Margin of Victory - Largest</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Margin</th>
+                    </tr>
+                    <tr>
+                        <td>Single Week</td>
+                        <td>Thanos vs. Cumming for the top - Week 17</td>
+                        <td>73.16</td>
+                    </tr>
+                    <tr>
+                        <td>Single Week, All Time</td>
+                        <td>Repeating Destiny vs. Eighth Loser - Week 14, Season 2020</td>
+                        <td>113.78</td>
+                    </tr>
+                    <tr>
+                        <td>Average</td>
+                        <td>Thanos</td>
+                        <td>31.75</td>
+                    </tr>
+                    <tr>
+                        <td>Average, All Time</td>
+                        <td>Repeating Destiny, Season 2020</td>
+                        <td>47.87</td>
+                    </tr>
+                </table>
+                
+                <h4>Margin of Victory - Smallest</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Margin</th>
+                    </tr>
+                    <tr>
+                        <td>Single Week</td>
+                        <td>Metaloid Maniacs vs. Cumming for the top - Week 10</td>
+                        <td>0.04</td>
+                    </tr>
+                    <tr>
+                        <td>Single Week, All Time</td>
+                        <td>Metaloid Maniacs vs. Cumming for the top - Week 10, Season 2024</td>
+                        <td>0.04</td>
+                    </tr>
+                    <tr>
+                        <td>Average</td>
+                        <td>Metaloid Maniacs</td>
+                        <td>12.89</td>
+                    </tr>
+                    <tr>
+                        <td>Average, All Time</td>
+                        <td>steven's Team, Season 2013</td>
+                        <td>8.13</td>
+                    </tr>
+                </table>
+                
+                <h4>Margin of Defeat - Largest</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Margin</th>
+                    </tr>
+                    <tr>
+                        <td>Single Week</td>
+                        <td>Cumming for the top vs. Thanos - Week 17</td>
+                        <td>73.16</td>
+                    </tr>
+                    <tr>
+                        <td>Single Week, All Time</td>
+                        <td>Eighth Loser vs. Repeating Destiny - Week 14, Season 2020</td>
+                        <td>113.78</td>
+                    </tr>
+                    <tr>
+                        <td>Average</td>
+                        <td>Bradley's Grand Team</td>
+                        <td>36.94</td>
+                    </tr>
+                    <tr>
+                        <td>Average, All Time</td>
+                        <td>The Squishy Tushies, Season 2017</td>
+                        <td>51.57</td>
+                    </tr>
+                </table>
+                
+                <h4>Margin of Defeat - Smallest</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Margin</th>
+                    </tr>
+                    <tr>
+                        <td>Single Week</td>
+                        <td>Cumming for the top vs. Metaloid Maniacs - Week 10</td>
+                        <td>0.04</td>
+                    </tr>
+                    <tr>
+                        <td>Single Week, All Time</td>
+                        <td>Cumming for the top vs. Metaloid Maniacs - Week 10, Season 2024</td>
+                        <td>0.04</td>
+                    </tr>
+                    <tr>
+                        <td>Average</td>
+                        <td>RAYGUN moves ☝️</td>
+                        <td>13.20</td>
+                    </tr>
+                    <tr>
+                        <td>Average, All Time</td>
+                        <td>GATTACA, Season 2014</td>
+                        <td>3.16</td>
+                    </tr>
+                </table>
+                
+                <h4>Strength of Schedule - Hardest</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Average</th>
+                    </tr>
+                    <tr>
+                        <td>Weekly Average</td>
+                        <td>YOUNG MONEY</td>
+                        <td>113.49</td>
+                    </tr>
+                    <tr>
+                        <td>Weekly Average, All Time</td>
+                        <td>I Chase Young Boys, Season 2023</td>
+                        <td>124.55</td>
+                    </tr>
+                </table>
+                
+                <h4>Strength of Schedule - Easiest</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Average</th>
+                    </tr>
+                    <tr>
+                        <td>Weekly Average</td>
+                        <td>Manojlovic</td>
+                        <td>98.54</td>
+                    </tr>
+                    <tr>
+                        <td>Weekly Average, All Time</td>
+                        <td>I miss this League, Season 2017</td>
+                        <td>77.99</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- Team Points Tab -->
+            <div id="team-points" class="tab-content">
+                <h4>Team Points - Most</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>Single Week</td>
+                        <td>RAYGUN moves ☝️ vs. YOUNG MONEY - Week 17</td>
+                        <td>174.42</td>
+                    </tr>
+                    <tr>
+                        <td>Single Week, All Time</td>
+                        <td>Repeating Destiny vs. Eighth Loser - Week 14, Season 2020</td>
+                        <td>187.52</td>
+                    </tr>
+                    <tr>
+                        <td>Season (Average)</td>
+                        <td>YOUNG MONEY</td>
+                        <td>2201.42 (129.49)</td>
+                    </tr>
+                    <tr>
+                        <td>Season, All Time</td>
+                        <td>YOUNG MONEY, Season 2024</td>
+                        <td>2201</td>
+                    </tr>
+                </table>
+                
+                <h4>Team Points - Least</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>Single Week</td>
+                        <td>Bradley's Grand Team vs. Cumming for the top - Week 16</td>
+                        <td>41.36</td>
+                    </tr>
+                    <tr>
+                        <td>Single Week, All Time</td>
+                        <td>Pants Party vs. Bradley's Grand Team - Week 14, Season 2017</td>
+                        <td>8.90</td>
+                    </tr>
+                    <tr>
+                        <td>Season (Average)</td>
+                        <td>Metaloid Maniacs</td>
+                        <td>1352.36 (90.15)</td>
+                    </tr>
+                    <tr>
+                        <td>Season, All Time</td>
+                        <td>Pants Party, Season 2017</td>
+                        <td>548</td>
+                    </tr>
+                </table>
+                
+                <h4>Offensive Points - Most</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>Single Week</td>
+                        <td>RAYGUN moves ☝️ vs. YOUNG MONEY - Week 17</td>
+                        <td>155.42</td>
+                    </tr>
+                    <tr>
+                        <td>Single Week, All Time</td>
+                        <td>Bradley's Grand Team vs. 40s and Shorties - Week 16, Season 2020</td>
+                        <td>176.8</td>
+                    </tr>
+                    <tr>
+                        <td>Season (Average)</td>
+                        <td>YOUNG MONEY</td>
+                        <td>2024.42 (119.08)</td>
+                    </tr>
+                    <tr>
+                        <td>Season, All Time</td>
+                        <td>Charles's Cool Team, Season 2018</td>
+                        <td>2044</td>
+                    </tr>
+                </table>
+                
+                <h4>Offensive Points - Least</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>Single Week</td>
+                        <td>Bradley's Grand Team vs. I Chase Young Boys - Week 17</td>
+                        <td>31.78</td>
+                    </tr>
+                    <tr>
+                        <td>Single Week, All Time</td>
+                        <td>Pants Party vs. Bradley's Grand Team - Week 14, Season 2017</td>
+                        <td>8.9</td>
+                    </tr>
+                    <tr>
+                        <td>Season (Average)</td>
+                        <td>Metaloid Maniacs</td>
+                        <td>1270.36 (83.70)</td>
+                    </tr>
+                    <tr>
+                        <td>Season, All Time</td>
+                        <td>Pants Party, Season 2017</td>
+                        <td>370</td>
+                    </tr>
+                </table>
+                
+                <h4>Defensive Points - Most</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>Single Week</td>
+                        <td>Manojlovic vs. I Chase Young Boys - Week 4</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>Single Week, All Time</td>
+                        <td>Constantly in the Basement vs. YOUNG MONEY - Week 1, Season 2023</td>
+                        <td>37</td>
+                    </tr>
+                    <tr>
+                        <td>Season (Average)</td>
+                        <td>YOUNG MONEY</td>
+                        <td>177 (10.41)</td>
+                    </tr>
+                    <tr>
+                        <td>Season, All Time</td>
+                        <td>Where's Sean?, Season 2019</td>
+                        <td>212</td>
+                    </tr>
+                </table>
+                
+                <h4>Defensive Points - Least</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>Single Week</td>
+                        <td>Going For....who cares 😭 vs. Bradley's Grand Team - Week 7</td>
+                        <td>-3</td>
+                    </tr>
+                    <tr>
+                        <td>Single Week, All Time</td>
+                        <td>I Chase Young Boys vs. Metaloid Maniacs - Week 10, Season 2023</td>
+                        <td>-4</td>
+                    </tr>
+                    <tr>
+                        <td>Season (Average)</td>
+                        <td>Metaloid Maniacs</td>
+                        <td>82 (5.46)</td>
+                    </tr>
+                    <tr>
+                        <td>Season, All Time</td>
+                        <td>Pants Party, Season 2017</td>
+                        <td>69</td>
+                    </tr>
+                </table>
+                
+                <h4>Points From Draft Players - Most</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>Single Week</td>
+                        <td>RAYGUN moves ☝️ vs. YOUNG MONEY - Week 17</td>
+                        <td>173.42</td>
+                    </tr>
+                    <tr>
+                        <td>Single Week, All Time</td>
+                        <td>Bradley's Grand Team vs. 40s and Shorties - Week 16, Season 2020</td>
+                        <td>182.8</td>
+                    </tr>
+                    <tr>
+                        <td>Season (Average)</td>
+                        <td>YOUNG MONEY</td>
+                        <td>1869.74 (109.98)</td>
+                    </tr>
+                    <tr>
+                        <td>Season, All Time</td>
+                        <td>Charles's Cool Team, Season 2018</td>
+                        <td>2043</td>
+                    </tr>
+                </table>
+                
+                <h4>Points From Draft Players - Least</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>Single Week</td>
+                        <td>Right back where we started - Week 16</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Single Week, All Time</td>
+                        <td>Right back where we started vs. - Week 16, Season 2024</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Season (Average)</td>
+                        <td>Right back where we started</td>
+                        <td>1128.3 (66.37)</td>
+                    </tr>
+                    <tr>
+                        <td>Season, All Time</td>
+                        <td>Pants Party, Season 2017</td>
+                        <td>548</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <!-- Team Statistics Tab -->
+            <div id="team-stats" class="tab-content">
+                <h4>Touchdowns - Most</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Touchdowns</th>
+                    </tr>
+                    <tr>
+                        <td>Single Week</td>
+                        <td>RAYGUN moves ☝️ vs. Cumming for the top - Week 5</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>Single Week, All Time</td>
+                        <td>Bradley's Grand Team vs. 40s and Shorties - Week 16, Season 2020</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Season (Average)</td>
+                        <td>RAYGUN moves ☝️</td>
+                        <td>120 (7.05)</td>
+                    </tr>
+                    <tr>
+                        <td>Season, All Time</td>
+                        <td>RAYGUN moves ☝️, Season 2024</td>
+                        <td>120</td>
+                    </tr>
+                </table>
+                
+                <h4>Touchdowns - Least</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Touchdowns</th>
+                    </tr>
+                    <tr>
+                        <td>Single Week</td>
+                        <td>Bradley's Grand Team vs. I Chase Young Boys - Week 17</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Single Week, All Time</td>
+                        <td>Bradley's Grand Team vs. I Chase Young Boys - Week 17, Season 2024</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Season (Average)</td>
+                        <td>Bradley's Grand Team</td>
+                        <td>66 (3.88)</td>
+                    </tr>
+                    <tr>
+                        <td>Season, All Time</td>
+                        <td>Pants Party, Season 2017</td>
+                        <td>29</td>
+                    </tr>
+                </table>
+                
+                <h4>Passing Yards - Most</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Yards</th>
+                    </tr>
+                    <tr>
+                        <td>Single Week</td>
+                        <td>Cumming for the top vs. RAYGUN moves ☝️ - Week 5</td>
+                        <td>509</td>
+                    </tr>
+                    <tr>
+                        <td>Single Week, All Time</td>
+                        <td>Brandon's Best Team vs. Young Money - Week 8, Season 2014</td>
+                        <td>522</td>
+                    </tr>
+                    <tr>
+                        <td>Season (Average)</td>
+                        <td>Manojlovic</td>
+                        <td>4830 (284.11)</td>
+                    </tr>
+                    <tr>
+                        <td>Season, All Time</td>
+                        <td>PayPal, Season 2013</td>
+                        <td>5549</td>
+                    </tr>
+                </table>
+                
+                <h4>Passing Yards - Least</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Yards</th>
+                    </tr>
+                    <tr>
+                        <td>Single Week</td>
+                        <td>Cumming for the top vs. Thanos - Week 17</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Single Week, All Time</td>
+                        <td>Cumming for the top vs. Thanos - Week 17, Season 2024</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Season (Average)</td>
+                        <td>Cumming for the top</td>
+                        <td>3386 (199.17)</td>
+                    </tr>
+                    <tr>
+                        <td>Season, All Time</td>
+                        <td>Pants Party, Season 2017</td>
+                        <td>1675</td>
+                    </tr>
+                </table>
+                
+                <h4>Rushing Yards - Most</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Yards</th>
+                    </tr>
+                    <tr>
+                        <td>Single Week</td>
+                        <td>Right back where we started - Week 16</td>
+                        <td>431</td>
+                    </tr>
+                    <tr>
+                        <td>Single Week, All Time</td>
+                        <td>Repeating Destiny vs. Eighth Loser - Week 14, Season 2020</td>
+                        <td>490</td>
+                    </tr>
+                    <tr>
+                        <td>Season (Average)</td>
+                        <td>YOUNG MONEY</td>
+                        <td>4964 (292)</td>
+                    </tr>
+                    <tr>
+                        <td>Season, All Time</td>
+                        <td>YOUNG MONEY, Season 2024</td>
+                        <td>4964</td>
+                    </tr>
+                </table>
+                
+                <h4>Rushing Yards - Least</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Yards</th>
+                    </tr>
+                    <tr>
+                        <td>Single Week</td>
+                        <td>Metaloid Maniacs vs. YOUNG MONEY - Week 9</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Single Week, All Time</td>
+                        <td>Pants Party vs. BANGIA-HernandezGang - Week 4, Season 2017</td>
+                        <td>-1</td>
+                    </tr>
+                    <tr>
+                        <td>Season (Average)</td>
+                        <td>Metaloid Maniacs</td>
+                        <td>1119 (65.83)</td>
+                    </tr>
+                    <tr>
+                        <td>Season, All Time</td>
+                        <td>Pants Party, Season 2017</td>
+                        <td>187</td>
+                    </tr>
+                </table>
+                
+                <h4>Receiving Yards - Most</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Yards</th>
+                    </tr>
+                    <tr>
+                        <td>Single Week</td>
+                        <td>I Chase Young Boys vs. Manojlovic - Week 13</td>
+                        <td>548</td>
+                    </tr>
+                    <tr>
+                        <td>Single Week, All Time</td>
+                        <td>Thanos vs. #1BestWinner - Week 5, Season 2021</td>
+                        <td>676</td>
+                    </tr>
+                    <tr>
+                        <td>Season (Average)</td>
+                        <td>YOUNG MONEY</td>
+                        <td>6008 (353.41)</td>
+                    </tr>
+                    <tr>
+                        <td>Season, All Time</td>
+                        <td>Manojlovic, Season 2023</td>
+                        <td>6477</td>
+                    </tr>
+                </table>
+                
+                <h4>Receiving Yards - Least</h4>
+                <table class="records-table">
+                    <tr>
+                        <th>Record</th>
+                        <th>Record Holder</th>
+                        <th>Yards</th>
+                    </tr>
+                    <tr>
+                        <td>Single Week</td>
+                        <td>Bradley's Grand Team vs. Cumming for the top - Week 16</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>Single Week, All Time</td>
+                        <td>Pants Party vs. - Week 16, Season 2017</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>Season (Average)</td>
+                        <td>Going For....who cares 😭</td>
+                        <td>4573 (269)</td>
+                    </tr>
+                    <tr>
+                        <td>Season, All Time</td>
+                        <td>Pants Party, Season 2017</td>
+                        <td>1319</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        
+        <section class="all-time-standings">
+            <h3>All-Time Standings (Since 2013)</h3>
+            <table class="records-table">
+                <tr>
+                    <th>Owner</th>
+                    <th>Championships</th>
+                    <th>Runner-ups</th>
+                    <th>Playoff Appearances</th>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Win %</th>
+                </tr>
+                <tr>
+                    <td>Aaron (RAYGUN moves ☝️)</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>73</td>
+                    <td>52</td>
+                    <td>.584</td>
+                </tr>
+                <tr>
+                    <td>David (YOUNG MONEY)</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>8</td>
+                    <td>87</td>
+                    <td>38</td>
+                    <td>.696</td>
+                </tr>
+                <tr>
+                    <td>Miljan (Manojlovic)</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>65</td>
+                    <td>60</td>
+                    <td>.520</td>
+                </tr>
+                <!-- More owners would go here -->
+            </table>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Genious League Dynasty. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Tab functionality for the records section
+        function openTab(evt, tabName) {
+            // Hide all tab content
+            var tabcontent = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            
+            // Remove "active" class from all tab links
+            var tablinks = document.getElementsByClassName("tab-link");
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            
+            // Show the selected tab content and add "active" class to the clicked tab
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
 </body>
 </html>

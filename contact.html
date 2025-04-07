@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <h1>Genious League Dynasty</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rosters.html">Rosters</a></li>
+                <li><a href="draft.html">Draft Order</a></li>
+                <li><a href="constitution.html">Constitution</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <h2>Contact Us</h2>
+        <p class="contact-intro">Have questions about the Genious League Dynasty? Get in touch with our league commissioner.</p>
+        
+        <div class="contact-grid">
+            <section class="contact-form">
+                <h3>Send a Message</h3>
+                <form action="mailto:davidhogue@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <select id="subject" name="subject">
+                            <option value="general">General Question</option>
+                            <option value="roster">Roster Issue</option>
+                            <option value="trades">Trade Question</option>
+                            <option value="rules">Rules Clarification</option>
+                            <option value="technical">Website Technical Issue</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </section>
+            
+            <section class="league-officials">
+                <h3>League Officials</h3>
+                <div class="official-card">
+                    <h4>League Commissioner & Treasurer</h4>
+                    <p><strong>David</strong> (YOUNG MONEY)</p>
+                    <p>Email: davidhogue@gmail.com</p>
+                    <p>Responsibilities: Rules enforcement, dispute resolution, league organization, trade approval, league dues collection, and prize money distribution</p>
+                </div>
+            </section>
+            
+            <section class="faq">
+                <h3>Frequently Asked Questions</h3>
+                
+                <div class="faq-item">
+                    <h4>When are league dues due?</h4>
+                    <p>League fees ($50) must be paid before the draft on August 23rd. Failure to pay by the first regular season game may result in removal from the league.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>How is the draft order determined?</h4>
+                    <p>Draft order is snake format and is determined based on the previous season's standings, with the worst team picking first.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>When is the roster cut deadline?</h4>
+                    <p>Final roster cuts must be submitted in Yahoo by August 1st.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>How are trades processed?</h4>
+                    <p>Trades are processed through the league software and are approved by the commissioner (David).</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Genious League Dynasty. All rights reserved.</p>
+    </footer>
+</body>
+</html>

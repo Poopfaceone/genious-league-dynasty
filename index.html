@@ -16,49 +16,152 @@
                 <li><a href="draft.html">Draft Order</a></li>
                 <li><a href="constitution.html">Constitution</a></li>
                 <li><a href="history.html">History</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-    
+   
     <main>
         <section class="hero">
-            <h1>Congratulations to the Reigning 2024 Champion: 
-                <br><br>AARON (RAYGUN MOVES)</h1>
+            <!-- Picture element for responsive images -->
+            <picture class="hero-image">
+                <source media="(min-width: 1200px)" srcset="scrimmage-large.jpg">
+                <source media="(min-width: 768px)" srcset="scrimmage-medium.jpg">
+                <img src="scrimmage-small.jpg" alt="Football field scrimmage" class="hero-background">
+            </picture>
+            
+            <!-- Dark overlay div -->
+            <div class="hero-overlay"></div>
+            
+            <!-- Hero content -->
+            <h1>Congratulations to the Reigning 2024 Champion:
+                <br><br>AARON (RAYGUN moves ☝️)</h1>
             <p>2nd Place: DAVID (YOUNG MONEY)<br>3rd Place: MILJAN (MANOJLOVIC)</p>
+            <div class="photo-credit">Photo by Muyuan Ma on Unsplash</div>
         </section>
+
         <section class="content">
             <div class="announcements">
-                <h2>Announcements</h2>
+                <h2>Announcements & Deadlines</h2>
                 <ul>
-                    <li>Website under construction</li>
-                    <li>Please review rosters and make final cuts and submit in Yahoo by 8/1</li>
-                    <li>Dues will be collected prior to the draft on 8/23</li>
+                    <li>Yahoo League Site is currently unavailable until the 2025 season begins (mid-August)</li><br>
+                    <li>Draft date: 8/31/25</li><br>
+                    <li>League dues are $50 -  due at the draft</li><br>
+                    <li>Please review rosters and make final cuts (max 25 players) and submit in Yahoo by 8/23/25</li><br>
                 </ul>
             </div>
-            
-            <div class="upcoming-deadlines">
-                <h2>Upcoming Deadlines</h2>
-                <p>Final roster cuts deadline: August 1st</p>
-                <p>Draft date: August 23rd</p>
-            </div>
-            
+           
             <div class="active-polls">
                 <h2>Active Polls</h2>
-                <p><a href="#">Vote on rule changes here</a></p>
+                <div class="poll-container">
+                    <h3>Trades during the playoffs</h3>
+                    <p>Please vote for <strong>one</strong> of the following options to determine how trades will be handled during the playoffs:</p>
+                    
+                    <form id="poll-form" class="poll-form">
+                        <div class="poll-option">
+                            <input type="radio" id="option1" name="poll-option" value="option1" required>
+                            <label for="option1"><strong>Option 1: Trades allowed, but new players can't be started</strong><br>
+                            Trades are allowed at all times, including during the playoffs. However, any player acquired via trade during the playoffs is <strong>not eligible to be started</strong> in playoff matchups.</label>
+                        </div>
+                        
+                        <div class="poll-option">
+                            <input type="radio" id="option2" name="poll-option" value="option2" required>
+                            <label for="option2"><strong>Option 2: Only eliminated teams can trade</strong><br>
+                            Teams that are no longer in playoff contention can continue to trade. Playoff teams are only allowed to trade <strong>after they are eliminated</strong>.</label>
+                        </div>
+                        
+                        <div class="poll-option">
+                            <input type="radio" id="option3" name="poll-option" value="option3" required>
+                            <label for="option3"><strong>Option 3: Freeze playoff team rosters</strong><br>
+                            Playoff teams are not allowed to trade at all during the playoffs. Eliminated teams may continue trading as usual.</label>
+                        </div>
+                        
+                        <div class="poll-option">
+                            <input type="radio" id="option4" name="poll-option" value="option4" required>
+                            <label for="option4"><strong>Option 4: All trades allowed with league review</strong><br>
+                            All trades, including those involving playoff teams, are allowed during the playoffs, but they must be approved through a <strong>league vote or commissioner review</strong> to ensure fairness.</label>
+                        </div>
+                        
+                        <div class="poll-option">
+                            <input type="radio" id="option5" name="poll-option" value="option5" required>
+                            <label for="option5"><strong>Option 5: Trade deadline before playoffs</strong><br>
+                            No trades are allowed once the regular season ends. Trading resumes after the championship in the off-season.</label>
+                        </div>
+                        
+                        <div class="voter-info">
+                            <label for="voter-name">Your Name:</label>
+                            <input type="text" id="voter-name" name="voter-name" required>
+                        </div>
+                        
+                        <button type="submit" id="vote-button">Submit Vote</button>
+                        <p id="vote-message" class="vote-message"></p>
+                    </form>
+                    
+                    <!-- Current Poll Results (Always Visible) -->
+                    <div class="current-results">
+                        <h4>Current Poll Results</h4>
+                        <div class="result-bars">
+                            <div class="result-option">
+                                <span>Option 1: Trades allowed, but new players can't be started</span>
+                                <div class="result-bar">
+                                    <div class="bar" id="option1-bar" style="width: 0%"></div>
+                                    <span id="option1-percent">0%</span>
+                                </div>
+                                <span id="option1-votes">0 votes</span>
+                            </div>
+                            <div class="result-option">
+                                <span>Option 2: Only eliminated teams can trade</span>
+                                <div class="result-bar">
+                                    <div class="bar" id="option2-bar" style="width: 0%"></div>
+                                    <span id="option2-percent">0%</span>
+                                </div>
+                                <span id="option2-votes">0 votes</span>
+                            </div>
+                            <div class="result-option">
+                                <span>Option 3: Freeze playoff team rosters</span>
+                                <div class="result-bar">
+                                    <div class="bar" id="option3-bar" style="width: 0%"></div>
+                                    <span id="option3-percent">0%</span>
+                                </div>
+                                <span id="option3-votes">0 votes</span>
+                            </div>
+                            <div class="result-option">
+                                <span>Option 4: All trades allowed with league review</span>
+                                <div class="result-bar">
+                                    <div class="bar" id="option4-bar" style="width: 0%"></div>
+                                    <span id="option4-percent">0%</span>
+                                </div>
+                                <span id="option4-votes">0 votes</span>
+                            </div>
+                            <div class="result-option">
+                                <span>Option 5: Trade deadline before playoffs</span>
+                                <div class="result-bar">
+                                    <div class="bar" id="option5-bar" style="width: 0%"></div>
+                                    <span id="option5-percent">0%</span>
+                                </div>
+                                <span id="option5-votes">0 votes</span>
+                            </div>
+                        </div>
+                        <p id="total-votes">Total votes: 0</p>
+                        <div class="voters-list">
+                            <h5>Who Has Voted</h5>
+                            <ul id="voters"></ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
+           
             <div class="pending-trades">
                 <h2>Pending Trades</h2>
                 <ul>
                     <li>
                         <strong>Tony Pollard (TEN - RB)</strong><br>
-                        Round 1, <br> Round 2 <br>
+                        Pick 1.05 (2025), <br> Pick 2.06 (2025)<br>
                         <em>Traded to:</em> <strong>Dustin</strong> <br>
                         <span class="trade-timestamp">Dec 13, 6:55 pm</span><br>
-                    </li>
+                    </li><br>
                     <li>
                         <strong>Brian Thomas Jr. (JAX - WR), <br>Drake London (ATL - WR)</strong><br>
-                        Round 24, <br>Round 25 <br>
                         <em>Traded to:</em> <strong>Sean</strong> <br>
                         <span class="trade-timestamp">Dec 13, 6:55 pm</span>
                     </li>
@@ -66,9 +169,10 @@
             </div>
         </section>
     </main>
-    
+   
     <footer>
         <p>&copy; 2025 Genious League Dynasty. All rights reserved.</p>
     </footer>
+    <script src="poll.js"></script>
 </body>
 </html>
