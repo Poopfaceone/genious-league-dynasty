@@ -2,12 +2,12 @@
 
 /* Color Palette */
 :root {
-    --primary-color: #004488; /* Deep Blue */
-    --primary-dark: #002244; /* Darker Shade of Deep Blue */
-    --secondary-color: #FFA500; /* Orange */
-    --background-color: #F5F5F5; /* Light Gray */
-    --text-color: #333333; /* Dark Gray */
-    --accent-color: #D9534F; /* Red Accent */
+    --primary-color: #004488; 
+    --primary-dark: #002244; 
+    --secondary-color: #FFA500; 
+    --background-color: #F5F5F5; 
+    --text-color: #333333;
+    --accent-color: #D9534F;
 }
 
 /* Global Styles */
@@ -56,13 +56,13 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s ease, transform 0.2s ease; /* Add transition */
+    transition: color 0.3s ease, transform 0.2s ease;
     display: inline-block;
 }
 
 nav ul li a:hover {
     color: var(--secondary-color);
-    transform: translateY(-2px); /* Slight lift effect */
+    transform: translateY(-2px);
 }
 
 main {
@@ -276,29 +276,6 @@ footer {
     border: 0;
 }
 
-/* Under Construction Page */
-.construction-container {
-    text-align: center;
-    padding: 50px;
-}
-
-.construction-content h2 {
-    font-size: 28px;
-    color: var(--primary-color);
-    margin-bottom: 10px;
-}
-
-.construction-content p {
-    font-size: 18px;
-    color: var(--text-color);
-    margin-bottom: 20px;
-}
-
-.construction-content img {
-    max-width: 100%;
-    height: auto;
-}
-
 /* History Page Styles */
 .history-container {
     padding: 20px;
@@ -435,71 +412,6 @@ footer {
     .roster-grid {
         grid-template-columns: 1fr;
     }
-}
-/* Roster Page Styles */
-.rosters-container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.update-info {
-    font-style: italic;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.team-selection {
-    margin-bottom: 20px;
-}
-
-.team-selection select {
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-.roster-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.team-roster {
-    background: white;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-.team-roster h3 {
-    color: var(--primary-color);
-    margin-top: 0;
-    border-bottom: 2px solid var(--secondary-color);
-    padding-bottom: 5px;
-}
-
-.roster-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.roster-table th, .roster-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-.roster-table th {
-    background-color: var(--primary-color);
-    color: white;
-}
-
-.roster-table tr:nth-child(even) {
-    background-color: #f2f2f2;
 }
 
 /* Position header rows */
@@ -809,18 +721,10 @@ footer {
     }
     
     .draft-table table {
-        min-width: 800px; /* Ensure table maintains minimum width */
+        min-width: 800px;
     }
     
-/* Improved mobile navigation */
-    nav ul {
-        flex-wrap: wrap;
-    }
-    
-    nav ul li {
-        margin: 5px 10px;
-    }
-}
+
 /* Contact Page Styles */
 .contact-container {
     padding: 20px;
@@ -960,113 +864,13 @@ button:hover, .submit-button:hover, #vote-button:hover, .rules-suggestion button
     }
 }
 
-/* Contact Page Styles */
-.contact-container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+nav ul {
+    flex-wrap: wrap;
 }
 
-.contact-intro {
-    margin-bottom: 30px;
-    font-size: 18px;
+nav ul li {
+    margin: 5px 10px;
 }
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-/* Contact Form Styles */
-.contact-form {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.submit-button {
-    background: var(--primary-color);
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.submit-button:hover {
-    background: var(--primary-dark);
-}
-
-/* League Officials Styles */
-.league-officials {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.official-card {
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #eee;
-}
-
-.official-card:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-}
-
-.official-card h4 {
-    color: var(--primary-color);
-    margin-top: 0;
-    margin-bottom: 5px;
-}
-
-/* FAQ Styles */
-.faq {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.faq-item {
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #eee;
-}
-
-.faq-item:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-}
-
-.faq-item h4 {
-    color: var(--primary-color);
-    margin-top: 0;
-    margin-bottom: 5px;
 }
 
 /* Mobile Responsive Adjustments */
