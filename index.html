@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home of the Genious League Dynasty fantasy football league. View announcements, active polls, and pending trades.">
     <title>Genious League Dynasty</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="banner"><h1>Genious League Dynasty</h1></div>
-        <nav>
+        <nav role="navigation" aria-label="Main navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="rosters.html">Rosters</a></li>
                 <li><a href="draft.html">Draft Order</a></li>
                 <li><a href="constitution.html">Constitution</a></li>
@@ -23,19 +26,16 @@
    
     <main>
         <section class="hero">
-            <!-- Picture element for responsive images -->
             <picture class="hero-image">
                 <source media="(min-width: 1200px)" srcset="scrimmage-large.jpg">
                 <source media="(min-width: 768px)" srcset="scrimmage-medium.jpg">
                 <img src="scrimmage-small.jpg" alt="Football field scrimmage" class="hero-background">
             </picture>
             
-            <!-- Dark overlay div -->
             <div class="hero-overlay"></div>
             
-            <!-- Hero content -->
             <h2 class="champion-heading">Congratulations to the Reigning 2024 Champion:</h2>
-            <p class="champion-name">AARON (RAYGUN moves ☝️)</p>
+            <p class="champion-name">AARON (RAYGUN MOVES ☝️)</p>
             <p>2nd Place: DAVID (YOUNG MONEY)<br>3rd Place: MILJAN (MANOJLOVIC)</p>
             <div class="photo-credit">Photo by Muyuan Ma on Unsplash</div>
         </section>

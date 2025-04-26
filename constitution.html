@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official rules and constitution for the Genious League Dynasty fantasy football league.">
     <title>League Constitution</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="banner">
             <h1>Genious League Dynasty</h1>
         </div>
-        <nav>
+        <nav role="navigation" aria-label="Main navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="rosters.html">Rosters</a></li>
                 <li><a href="draft.html">Draft Order</a></li>
                 <li><a href="constitution.html">Constitution</a></li>
@@ -74,8 +77,8 @@
         </section>
 
         <aside class="rules-suggestion">
-            <h2>Suggest a Rule Change</h2>
-            <form action="mailto:poopfaceone@yahoo.com" method="post" enctype="text/plain">
+            <h2 id="rules-form-heading">Suggest a Rule Change</h2>
+            <form action="mailto:davidhogue@gmail.com" method="post" enctype="text/plain" aria-labelledby="rules-form-heading">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -95,3 +98,45 @@
     </footer>
 </body>
 </html>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const ruleForm = document.querySelector('.rules-suggestion form');
+        const submitButton = ruleForm.querySelector('button[type="submit"]');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const suggestionInput = document.getElementById('suggestion');
+        
+        ruleForm.addEventListener('submit', function(e) {
+            // Basic validation
+            let isValid = true;
+            
+            if (nameInput.value.trim() === '') {
+                isValid = false;
+                nameInput.style.borderColor = 'red';
+            } else {
+                nameInput.style.borderColor = '#ccc';
+            }
+            
+            if (emailInput.value.trim() === '' || !emailInput.value.includes('@')) {
+                isValid = false;
+                emailInput.style.borderColor = 'red';
+            } else {
+                emailInput.style.borderColor = '#ccc';
+            }
+            
+            if (suggestionInput.value.trim() === '') {
+                isValid = false;
+                suggestionInput.style.borderColor = 'red';
+            } else {
+                suggestionInput.style.borderColor = '#ccc';
+            }
+            
+            if (!isValid) {
+                e.preventDefault();
+                alert('Please fill out all required fields correctly.');
+            } else {
+                alert('Thank you for your suggestion! It has been submitted to the commissioner.');
+            }
+        });
+    });
+    </script>

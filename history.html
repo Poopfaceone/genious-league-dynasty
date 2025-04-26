@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="League history, records, and statistics for the Genious League Dynasty fantasy football league.">
     <title>League History</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="banner">
             <h1>Genious League Dynasty</h1>
         </div>
-        <nav>
+        <nav role="navigation" aria-label="Main navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="rosters.html">Rosters</a></li>
                 <li><a href="draft.html">Draft Order</a></li>
                 <li><a href="constitution.html">Constitution</a></li>
@@ -53,12 +56,16 @@
             <!-- Head-To-Head Tab -->
             <div id="head-to-head" class="tab-content active">
                 <h4>Wins</h4>
-                <table class="records-table">
-                    <tr>
-                        <th>Record</th>
-                        <th>Record Holder</th>
-                        <th>Wins</th>
-                    </tr>
+                <table class="records-table" aria-label="League Records - Wins">
+                    <caption>League Records - Wins</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Record</th>
+                            <th scope="col">Record Holder</th>
+                            <th scope="col">Wins</th>
+                        </tr>
+                    </thead>
+                    <tbody>
                     <tr>
                         <td>Most Wins</td>
                         <td>YOUNG MONEY</td>
@@ -84,6 +91,7 @@
                         <td>RAYGUN moves ☝️</td>
                         <td>6</td>
                     </tr>
+                    </tbody>
                 </table>
                 
                 <h4>Losses</h4>

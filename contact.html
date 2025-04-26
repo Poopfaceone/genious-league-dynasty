@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact information for league officials and frequently asked questions for the Genious League Dynasty.">
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="banner">
             <h1>Genious League Dynasty</h1>
         </div>
-        <nav>
+        <nav role="navigation" aria-label="Main navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="rosters.html">Rosters</a></li>
                 <li><a href="draft.html">Draft Order</a></li>
                 <li><a href="constitution.html">Constitution</a></li>
@@ -29,8 +32,8 @@
         
         <div class="contact-grid">
             <section class="contact-form">
-                <h3>Send a Message</h3>
-                <form action="mailto:davidhogue@gmail.com" method="post" enctype="text/plain">
+                <h3 id="contact-form-heading">Send a Message</h3>
+                <form action="mailto:davidhogue@gmail.com" method="post" enctype="text/plain" aria-labelledby="contact-form-heading">
                     <div class="form-group">
                         <label for="name">Your Name:</label>
                         <input type="text" id="name" name="name" required>
@@ -103,3 +106,44 @@
     </footer>
 </body>
 </html>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const contactForm = document.querySelector('.contact-form form');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const messageInput = document.getElementById('message');
+        
+        contactForm.addEventListener('submit', function(e) {
+            // Basic validation
+            let isValid = true;
+            
+            if (nameInput.value.trim() === '') {
+                isValid = false;
+                nameInput.style.borderColor = 'red';
+            } else {
+                nameInput.style.borderColor = '#ccc';
+            }
+            
+            if (emailInput.value.trim() === '' || !emailInput.value.includes('@')) {
+                isValid = false;
+                emailInput.style.borderColor = 'red';
+            } else {
+                emailInput.style.borderColor = '#ccc';
+            }
+            
+            if (messageInput.value.trim() === '') {
+                isValid = false;
+                messageInput.style.borderColor = 'red';
+            } else {
+                messageInput.style.borderColor = '#ccc';
+            }
+            
+            if (!isValid) {
+                e.preventDefault();
+                alert('Please fill out all required fields correctly.');
+            } else {
+                alert('Thank you for your message! The commissioner will respond to you shortly.');
+            }
+        });
+    });
+    </script>

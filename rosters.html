@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Current rosters for all teams in the Genious League Dynasty fantasy football league.">
     <title>League Rosters</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="banner">
             <h1>Genious League Dynasty</h1>
         </div>
-        <nav>
+        <nav role="navigation" aria-label="Main navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="rosters.html">Rosters</a></li>
+                <li><a href="rosters.html" aria-current="page">Rosters</a></li>
                 <li><a href="draft.html">Draft Order</a></li>
                 <li><a href="constitution.html">Constitution</a></li>
                 <li><a href="history.html">History</a></li>
@@ -28,8 +31,8 @@
         <p class="update-info">Last Updated: March 29, 2025</p>
         
         <div class="team-selection">
-            <label for="team-select">Select Team:</label>
-            <select id="team-select">
+            <label for="team-select" id="team-select-label">Select Team:</label>
+            <select id="team-select" aria-labelledby="team-select-label">
                 <option value="all">All Teams</option>
                 <option value="david">David (YOUNG MONEY)</option>
                 <option value="aaron">Aaron (RAYGUN moves ☝️)</option>
@@ -48,520 +51,730 @@
             <!-- David's Team (YOUNG MONEY) -->
             <section class="team-roster" id="david-team">
                 <h3>David (YOUNG MONEY)</h3>
-                <table class="roster-table">
-                    <tr>
-                        <th>Quarterbacks</th>
-                    </tr>
-                    <tr><td>Sam Darnold</td></tr>
-                    <tr><td>Trevor Lawrence</td></tr>
-                    <tr><td>Michael Penix Jr.</td></tr>
+                <table class="roster-table" aria-label="David's Team Roster">
+                    <caption class="sr-only">David's Team Roster</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Quarterbacks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Sam Darnold</td></tr>
+                        <tr><td>Trevor Lawrence</td></tr>
+                        <tr><td>Michael Penix Jr.</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Running Backs</th>
-                    </tr>
-                    <tr><td>Saquon Barkley</td></tr>
-                    <tr><td>Bijan Robinson</td></tr>
-                    <tr><td>Alvin Kamara</td></tr>
-                    <tr><td>Nick Chubb</td></tr>
-                    <tr><td>Brian Robinson Jr.</td></tr>
-                    <tr><td>Chase Brown</td></tr>
-                    <tr><td>Blake Corum</td></tr>
-                    <tr><td>Tyler Allgeier</td></tr>
-                    <tr><td>Jaylen Wright</td></tr>
-                    <tr><td>Jordan Mason</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Running Backs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Saquon Barkley</td></tr>
+                        <tr><td>Bijan Robinson</td></tr>
+                        <tr><td>Alvin Kamara</td></tr>
+                        <tr><td>Nick Chubb</td></tr>
+                        <tr><td>Brian Robinson Jr.</td></tr>
+                        <tr><td>Chase Brown</td></tr>
+                        <tr><td>Blake Corum</td></tr>
+                        <tr><td>Tyler Allgeier</td></tr>
+                        <tr><td>Jaylen Wright</td></tr>
+                        <tr><td>Jordan Mason</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Wide Receivers</th>
-                    </tr>
-                    <tr><td>Chris Olave</td></tr>
-                    <tr><td>Puka Nacua</td></tr>
-                    <tr><td>Calvin Ridley</td></tr>
-                    <tr><td>George Pickens</td></tr>
-                    <tr><td>Rome Odunze</td></tr>
-                    <tr><td>Cedric Tillman</td></tr>
-                    <tr><td>Michael Wilson</td></tr>
-                    <tr><td>Ricky Pearsall</td></tr>
-                    <tr><td>Rashid Shaheed</td></tr>
-                    <tr><td>Chris Godwin</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Wide Receivers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Chris Olave</td></tr>
+                        <tr><td>Puka Nacua</td></tr>
+                        <tr><td>Calvin Ridley</td></tr>
+                        <tr><td>George Pickens</td></tr>
+                        <tr><td>Rome Odunze</td></tr>
+                        <tr><td>Cedric Tillman</td></tr>
+                        <tr><td>Michael Wilson</td></tr>
+                        <tr><td>Ricky Pearsall</td></tr>
+                        <tr><td>Rashid Shaheed</td></tr>
+                        <tr><td>Chris Godwin</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Tight Ends</th>
-                    </tr>
-                    <tr><td>Sam LaPorta</td></tr>
-                    <tr><td>Trey McBride</td></tr>
-                    <tr><td>David Njoku</td></tr>
-                    <tr><td>Kyle Pitts</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tight Ends</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Sam LaPorta</td></tr>
+                        <tr><td>Trey McBride</td></tr>
+                        <tr><td>David Njoku</td></tr>
+                        <tr><td>Kyle Pitts</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Defense</th>
-                    </tr>
-                    <tr><td>Buffalo - DEF</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Defense</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Buffalo - DEF</td></tr>
+                    </tbody>
                 </table>
             </section>
             
             <!-- Aaron's Team (RAYGUN moves ☝️) -->
             <section class="team-roster" id="aaron-team">
                 <h3>Aaron (RAYGUN moves ☝️)</h3>
-                <table class="roster-table">
-                    <tr>
-                        <th>Quarterbacks</th>
-                    </tr>
-                    <tr><td>Lamar Jackson</td></tr>
-                    <tr><td>Anthony Richardson</td></tr>
-                    <tr><td>Bo Nix</td></tr>
-                    <tr><td>Bryce Young</td></tr>
-                    <tr><td>J.J. McCarthy</td></tr>
+                <table class="roster-table" aria-label="Aaron's Team Roster">
+                    <caption class="sr-only">Aaron's Team Roster</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Quarterbacks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Lamar Jackson</td></tr>
+                        <tr><td>Anthony Richardson</td></tr>
+                        <tr><td>Bo Nix</td></tr>
+                        <tr><td>Bryce Young</td></tr>
+                        <tr><td>J.J. McCarthy</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Running Backs</th>
-                    </tr>
-                    <tr><td>Derrick Henry</td></tr>
-                    <tr><td>Javonte Williams</td></tr>
-                    <tr><td>Raheem Mostert</td></tr>
-                    <tr><td>Kenneth Gainwell</td></tr>
-                    <tr><td>Theo Johnson</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Running Backs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Derrick Henry</td></tr>
+                        <tr><td>Javonte Williams</td></tr>
+                        <tr><td>Raheem Mostert</td></tr>
+                        <tr><td>Kenneth Gainwell</td></tr>
+                        <tr><td>Theo Johnson</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Wide Receivers</th>
-                    </tr>
-                    <tr><td>Ja'Marr Chase</td></tr>
-                    <tr><td>DeVonta Smith</td></tr>
-                    <tr><td>Mike Evans</td></tr>
-                    <tr><td>Xavier Worthy</td></tr>
-                    <tr><td>Darius Slayton</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Wide Receivers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Ja'Marr Chase</td></tr>
+                        <tr><td>DeVonta Smith</td></tr>
+                        <tr><td>Mike Evans</td></tr>
+                        <tr><td>Xavier Worthy</td></tr>
+                        <tr><td>Darius Slayton</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Tight Ends</th>
-                    </tr>
-                    <tr><td>George Kittle</td></tr>
-                    <tr><td>Zach Ertz</td></tr>
-                    <tr><td>Cade Otton</td></tr>
-                    <tr><td>Mike Gesicki</td></tr>
-                    <tr><td>Tyler Conklin</td></tr>
-                    <tr><td>Luke Musgrave</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tight Ends</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>George Kittle</td></tr>
+                        <tr><td>Zach Ertz</td></tr>
+                        <tr><td>Cade Otton</td></tr>
+                        <tr><td>Mike Gesicki</td></tr>
+                        <tr><td>Tyler Conklin</td></tr>
+                        <tr><td>Luke Musgrave</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Defense</th>
-                    </tr>
-                    <tr><td>Philadelphia - DEF</td></tr>
-                    <tr><td>Houston - DEF</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Defense</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Philadelphia - DEF</td></tr>
+                        <tr><td>Houston - DEF</td></tr>
+                    </tbody>
                 </table>
             </section>
             
-            <!-- Brad's Team -->
+                        <!-- Brad's Team -->
             <section class="team-roster" id="brad-team">
                 <h3>Brad (Bradley's Grand Team)</h3>
-                <table class="roster-table">
-                    <tr>
-                        <th>Quarterbacks</th>
-                    </tr>
-                    <tr><td>Caleb Williams</td></tr>
-                    <tr><td>Drake Maye</td></tr>
-                    <tr><td>Aaron Rodgers</td></tr>
-                    <tr><td>Derek Carr</td></tr>
+                <table class="roster-table" aria-label="Brad's Team Roster">
+                    <caption class="sr-only">Brad's Team Roster</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Quarterbacks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Caleb Williams</td></tr>
+                        <tr><td>Drake Maye</td></tr>
+                        <tr><td>Aaron Rodgers</td></tr>
+                        <tr><td>Derek Carr</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Running Backs</th>
-                    </tr>
-                    <tr><td>Isiah Pacheco</td></tr>
-                    <tr><td>James Cook</td></tr>
-                    <tr><td>Ray Davis</td></tr>
-                    <tr><td>Dameon Pierce</td></tr>
-                    <tr><td>Will Shipley</td></tr>
-                    <tr><td>Bucky Irving</td></tr>
-                    <tr><td>Alexander Mattison</td></tr>
-                    <tr><td>Zack Moss</td></tr>
-                    <tr><td>A.J. Dillon</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Running Backs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Isiah Pacheco</td></tr>
+                        <tr><td>James Cook</td></tr>
+                        <tr><td>Ray Davis</td></tr>
+                        <tr><td>Dameon Pierce</td></tr>
+                        <tr><td>Will Shipley</td></tr>
+                        <tr><td>Bucky Irving</td></tr>
+                        <tr><td>Alexander Mattison</td></tr>
+                        <tr><td>Zack Moss</td></tr>
+                        <tr><td>A.J. Dillon</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Wide Receivers</th>
-                    </tr>
-                    <tr><td>CeeDee Lamb</td></tr>
-                    <tr><td>Davante Adams</td></tr>
-                    <tr><td>Terry McLaurin</td></tr>
-                    <tr><td>Jalen Coker</td></tr>
-                    <tr><td>Quentin Johnston</td></tr>
-                    <tr><td>Jerry Jeudy</td></tr>
-                    <tr><td>Josh Downs</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Wide Receivers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>CeeDee Lamb</td></tr>
+                        <tr><td>Davante Adams</td></tr>
+                        <tr><td>Terry McLaurin</td></tr>
+                        <tr><td>Jalen Coker</td></tr>
+                        <tr><td>Quentin Johnston</td></tr>
+                        <tr><td>Jerry Jeudy</td></tr>
+                        <tr><td>Josh Downs</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Tight Ends</th>
-                    </tr>
-                    <tr><td>T.J. Hockenson</td></tr>
-                    <tr><td>Dalton Kincaid</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tight Ends</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>T.J. Hockenson</td></tr>
+                        <tr><td>Dalton Kincaid</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Defense</th>
-                    </tr>
-                    <tr><td>Seattle - DEF</td></tr>
-                    <tr><td>Los Angeles - DEF</td></tr>
-                    <tr><td>Baltimore - DEF</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Defense</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Seattle - DEF</td></tr>
+                        <tr><td>Los Angeles - DEF</td></tr>
+                        <tr><td>Baltimore - DEF</td></tr>
+                    </tbody>
                 </table>
             </section>
-            
+
             <!-- Drew's Team -->
             <section class="team-roster" id="drew-team">
                 <h3>Drew (Right back where we started)</h3>
-                <table class="roster-table">
-                    <tr>
-                        <th>Quarterbacks</th>
-                    </tr>
-                    <tr><td>Kyler Murray</td></tr>
-                    <tr><td>Matthew Stafford</td></tr>
-                    <tr><td>Jared Goff</td></tr>
-                    <tr><td>Jordan Love</td></tr>
+                <table class="roster-table" aria-label="Drew's Team Roster">
+                    <caption class="sr-only">Drew's Team Roster</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Quarterbacks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Kyler Murray</td></tr>
+                        <tr><td>Matthew Stafford</td></tr>
+                        <tr><td>Jared Goff</td></tr>
+                        <tr><td>Jordan Love</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Running Backs</th>
-                    </tr>
-                    <tr><td>Jonathan Taylor</td></tr>
-                    <tr><td>Kyren Williams</td></tr>
-                    <tr><td>Rico Dowdle</td></tr>
-                    <tr><td>Tyjae Spears</td></tr>
-                    <tr><td>Ameer Abdullah</td></tr>
-                    <tr><td>Kendre Miller</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Running Backs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Jonathan Taylor</td></tr>
+                        <tr><td>Kyren Williams</td></tr>
+                        <tr><td>Rico Dowdle</td></tr>
+                        <tr><td>Tyjae Spears</td></tr>
+                        <tr><td>Ameer Abdullah</td></tr>
+                        <tr><td>Kendre Miller</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Wide Receivers</th>
-                    </tr>
-                    <tr><td>Malik Nabers</td></tr>
-                    <tr><td>Zay Flowers</td></tr>
-                    <tr><td>Darnell Mooney</td></tr>
-                    <tr><td>Hollywood Brown</td></tr>
-                    <tr><td>Adonai Mitchell</td></tr>
-                    <tr><td>Alec Pierce</td></tr>
-                    <tr><td>Ray-Ray McCloud</td></tr>
-                    <tr><td>Tre Tucker</td></tr>
-                    <tr><td>Joshua Palmer</td></tr>
-                    <tr><td>Andrei Iosivas</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Wide Receivers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Malik Nabers</td></tr>
+                        <tr><td>Zay Flowers</td></tr>
+                        <tr><td>Darnell Mooney</td></tr>
+                        <tr><td>Hollywood Brown</td></tr>
+                        <tr><td>Adonai Mitchell</td></tr>
+                        <tr><td>Alec Pierce</td></tr>
+                        <tr><td>Ray-Ray McCloud</td></tr>
+                        <tr><td>Tre Tucker</td></tr>
+                        <tr><td>Joshua Palmer</td></tr>
+                        <tr><td>Andrei Iosivas</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Tight Ends</th>
-                    </tr>
-                    <tr><td>Tucker Kraft</td></tr>
-                    <tr><td>Jake Ferguson</td></tr>
-                    <tr><td>Ja'Tavion Sanders</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tight Ends</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Tucker Kraft</td></tr>
+                        <tr><td>Jake Ferguson</td></tr>
+                        <tr><td>Ja'Tavion Sanders</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Defense</th>
-                    </tr>
-                    <tr><td>Jacksonville - DEF</td></tr>
-                    <tr><td>Green Bay - DEF</td></tr>
-                    <tr><td>Los Angeles - DEF</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Defense</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Jacksonville - DEF</td></tr>
+                        <tr><td>Green Bay - DEF</td></tr>
+                        <tr><td>Los Angeles - DEF</td></tr>
+                    </tbody>
                 </table>
             </section>
-            
+
             <!-- Sean's Team -->
             <section class="team-roster" id="sean-team">
                 <h3>Sean (Cumming for the top)</h3>
-                <table class="roster-table">
-                    <tr>
-                        <th>Quarterbacks</th>
-                    </tr>
-                    <tr><td>Jalen Hurts</td></tr>
-                    <tr><td>Kirk Cousins</td></tr>
-                    <tr><td>Drew Lock</td></tr>
+                <table class="roster-table" aria-label="Sean's Team Roster">
+                    <caption class="sr-only">Sean's Team Roster</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Quarterbacks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Jalen Hurts</td></tr>
+                        <tr><td>Kirk Cousins</td></tr>
+                        <tr><td>Drew Lock</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Running Backs</th>
-                    </tr>
-                    <tr><td>Joe Mixon</td></tr>
-                    <tr><td>D'Andre Swift</td></tr>
-                    <tr><td>De'Von Achane</td></tr>
-                    <tr><td>J.K. Dobbins</td></tr>
-                    <tr><td>Isaac Guerendo</td></tr>
-                    <tr><td>Audric Estime</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Running Backs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Joe Mixon</td></tr>
+                        <tr><td>D'Andre Swift</td></tr>
+                        <tr><td>De'Von Achane</td></tr>
+                        <tr><td>J.K. Dobbins</td></tr>
+                        <tr><td>Isaac Guerendo</td></tr>
+                        <tr><td>Audric Estime</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Wide Receivers</th>
-                    </tr>
-                    <tr><td>Brian Thomas Jr.</td></tr>
-                    <tr><td>Drake London</td></tr>
-                    <tr><td>Rashod Bateman</td></tr>
-                    <tr><td>Stefon Diggs</td></tr>
-                    <tr><td>Brandon Aiyuk</td></tr>
-                    <tr><td>Tim Patrick</td></tr>
-                    <tr><td>Nick Westbrook-Ikhine</td></tr>
-                    <tr><td>M. Valdes-Scantling</td></tr>
-                    <tr><td>Calvin Austin III</td></tr>
-                    <tr><td>Demarcus Robinson</td></tr>
-                    <tr><td>Curtis Samuel</td></tr>
-                    <tr><td>John Metchie III</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Wide Receivers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Brian Thomas Jr.</td></tr>
+                        <tr><td>Drake London</td></tr>
+                        <tr><td>Rashod Bateman</td></tr>
+                        <tr><td>Stefon Diggs</td></tr>
+                        <tr><td>Brandon Aiyuk</td></tr>
+                        <tr><td>Tim Patrick</td></tr>
+                        <tr><td>Nick Westbrook-Ikhine</td></tr>
+                        <tr><td>M. Valdes-Scantling</td></tr>
+                        <tr><td>Calvin Austin III</td></tr>
+                        <tr><td>Demarcus Robinson</td></tr>
+                        <tr><td>Curtis Samuel</td></tr>
+                        <tr><td>John Metchie III</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Tight Ends</th>
-                    </tr>
-                    <tr><td>Brock Bowers</td></tr>
-                    <tr><td>Taysom Hill</td></tr>
-                    <tr><td>Isaiah Likely</td></tr>
-                    <tr><td>Stone Smartt</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tight Ends</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Brock Bowers</td></tr>
+                        <tr><td>Taysom Hill</td></tr>
+                        <tr><td>Isaiah Likely</td></tr>
+                        <tr><td>Stone Smartt</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Defense</th>
-                    </tr>
-                    <tr><td>Las Vegas - DEF</td></tr>
-                    <tr><td>Washington - DEF</td></tr>
-                    <tr><td>Arizona - DEF</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Defense</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Las Vegas - DEF</td></tr>
+                        <tr><td>Washington - DEF</td></tr>
+                        <tr><td>Arizona - DEF</td></tr>
+                    </tbody>
                 </table>
             </section>
-            
+
             <!-- Charles's Team -->
             <section class="team-roster" id="charles-team">
                 <h3>Charles (I Chase Young Boys)</h3>
-                <table class="roster-table">
-                    <tr>
-                        <th>Quarterbacks</th>
-                    </tr>
-                    <tr><td>Josh Allen</td></tr>
-                    <tr><td>Will Levis</td></tr>
-                    <tr><td>Desmond Ridder</td></tr>
+                <table class="roster-table" aria-label="Charles's Team Roster">
+                    <caption class="sr-only">Charles's Team Roster</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Quarterbacks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Josh Allen</td></tr>
+                        <tr><td>Will Levis</td></tr>
+                        <tr><td>Desmond Ridder</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Running Backs</th>
-                    </tr>
-                    <tr><td>Najee Harris</td></tr>
-                    <tr><td>Gus Edwards</td></tr>
-                    <tr><td>Austin Ekeler</td></tr>
-                    <tr><td>Jaylen Warren</td></tr>
-                    <tr><td>Jerome Ford</td></tr>
-                    <tr><td>Trey Benson</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Running Backs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Najee Harris</td></tr>
+                        <tr><td>Gus Edwards</td></tr>
+                        <tr><td>Austin Ekeler</td></tr>
+                        <tr><td>Jaylen Warren</td></tr>
+                        <tr><td>Jerome Ford</td></tr>
+                        <tr><td>Trey Benson</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Wide Receivers</th>
-                    </tr>
-                    <tr><td>A.J. Brown</td></tr>
-                    <tr><td>Amon-Ra St. Brown</td></tr>
-                    <tr><td>Amari Cooper</td></tr>
-                    <tr><td>Adam Thielen</td></tr>
-                    <tr><td>Nico Collins</td></tr>
-                    <tr><td>Wan'Dale Robinson</td></tr>
-                    <tr><td>Robert Woods</td></tr>
-                    <tr><td>Dontayvion Wicks</td></tr>
-                    <tr><td>Keon Coleman</td></tr>
-                    <tr><td>Jalen McMillan</td></tr>
-                    <tr><td>Tutu Atwell</td></tr>
-                    <tr><td>Jordan Addison</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Wide Receivers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>A.J. Brown</td></tr>
+                        <tr><td>Amon-Ra St. Brown</td></tr>
+                        <tr><td>Amari Cooper</td></tr>
+                        <tr><td>Adam Thielen</td></tr>
+                        <tr><td>Nico Collins</td></tr>
+                        <tr><td>Wan'Dale Robinson</td></tr>
+                        <tr><td>Robert Woods</td></tr>
+                        <tr><td>Dontayvion Wicks</td></tr>
+                        <tr><td>Keon Coleman</td></tr>
+                        <tr><td>Jalen McMillan</td></tr>
+                        <tr><td>Tutu Atwell</td></tr>
+                        <tr><td>Jordan Addison</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Tight Ends</th>
-                    </tr>
-                    <tr><td>Hunter Henry</td></tr>
-                    <tr><td>Juwan Johnson</td></tr>
-                    <tr><td>Brevin Jordan</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tight Ends</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Hunter Henry</td></tr>
+                        <tr><td>Juwan Johnson</td></tr>
+                        <tr><td>Brevin Jordan</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Defense</th>
-                    </tr>
-                    <tr><td>Minnesota - DEF</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Defense</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Minnesota - DEF</td></tr>
+                    </tbody>
                 </table>
             </section>
-            
+
             <!-- Miljan's Team -->
             <section class="team-roster" id="miljan-team">
                 <h3>Miljan (Manojlovic)</h3>
-                <table class="roster-table">
-                    <tr>
-                        <th>Quarterbacks</th>
-                    </tr>
-                    <tr><td>Joe Burrow</td></tr>
-                    <tr><td>Tommy DeVito</td></tr>
-                    <tr><td>Mac Jones</td></tr>
+                <table class="roster-table" aria-label="Miljan's Team Roster">
+                    <caption class="sr-only">Miljan's Team Roster</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Quarterbacks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Joe Burrow</td></tr>
+                        <tr><td>Tommy DeVito</td></tr>
+                        <tr><td>Mac Jones</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Running Backs</th>
-                    </tr>
-                    <tr><td>Aaron Jones Sr.</td></tr>
-                    <tr><td>Josh Jacobs</td></tr>
-                    <tr><td>Devin Singletary</td></tr>
-                    <tr><td>Antonio Gibson</td></tr>
-                    <tr><td>Jaleel McLaughlin</td></tr>
-                    <tr><td>Justice Hill</td></tr>
-                    <tr><td>Jonathon Brooks</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Running Backs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Aaron Jones Sr.</td></tr>
+                        <tr><td>Josh Jacobs</td></tr>
+                        <tr><td>Devin Singletary</td></tr>
+                        <tr><td>Antonio Gibson</td></tr>
+                        <tr><td>Jaleel McLaughlin</td></tr>
+                        <tr><td>Justice Hill</td></tr>
+                        <tr><td>Jonathon Brooks</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Wide Receivers</th>
-                    </tr>
-                    <tr><td>Tyreek Hill</td></tr>
-                    <tr><td>Jayden Reed</td></tr>
-                    <tr><td>Keenan Allen</td></tr>
-                    <tr><td>DeAndre Hopkins</td></tr>
-                    <tr><td>Deebo Samuel Sr.</td></tr>
-                    <tr><td>Jakobi Meyers</td></tr>
-                    <tr><td>Jauan Jennings</td></tr>
-                    <tr><td>Romeo Doubs</td></tr>
-                    <tr><td>K.J. Osborn</td></tr>
-                    <tr><td>Elijah Moore</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Wide Receivers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Tyreek Hill</td></tr>
+                        <tr><td>Jayden Reed</td></tr>
+                        <tr><td>Keenan Allen</td></tr>
+                        <tr><td>DeAndre Hopkins</td></tr>
+                        <tr><td>Deebo Samuel Sr.</td></tr>
+                        <tr><td>Jakobi Meyers</td></tr>
+                        <tr><td>Jauan Jennings</td></tr>
+                        <tr><td>Romeo Doubs</td></tr>
+                        <tr><td>K.J. Osborn</td></tr>
+                        <tr><td>Elijah Moore</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Tight Ends</th>
-                    </tr>
-                    <tr><td>Travis Kelce</td></tr>
-                    <tr><td>Dalton Schultz</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tight Ends</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Travis Kelce</td></tr>
+                        <tr><td>Dalton Schultz</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Defense</th>
-                    </tr>
-                    <tr><td>Kansas City - DEF</td></tr>
-                    <tr><td>San Francisco - DEF</td></tr>
-                    <tr><td>Indianapolis - DEF</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Defense</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Kansas City - DEF</td></tr>
+                        <tr><td>San Francisco - DEF</td></tr>
+                        <tr><td>Indianapolis - DEF</td></tr>
+                    </tbody>
                 </table>
             </section>
-            
+
             <!-- Isaac's Team -->
             <section class="team-roster" id="isaac-team">
                 <h3>Isaac (Metaloid Maniacs)</h3>
-                <table class="roster-table">
-                    <tr>
-                        <th>Quarterbacks</th>
-                    </tr>
-                    <tr><td>Brock Purdy</td></tr>
-                    <tr><td>Tua Tagovailoa</td></tr>
-                    <tr><td>Sam Howell</td></tr>
-                    <tr><td>Jimmy Garoppolo</td></tr>
-                    <tr><td>Andy Dalton</td></tr>
+                <table class="roster-table" aria-label="Isaac's Team Roster">
+                    <caption class="sr-only">Isaac's Team Roster</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Quarterbacks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Brock Purdy</td></tr>
+                        <tr><td>Tua Tagovailoa</td></tr>
+                        <tr><td>Sam Howell</td></tr>
+                        <tr><td>Jimmy Garoppolo</td></tr>
+                        <tr><td>Andy Dalton</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Running Backs</th>
-                    </tr>
-                    <tr><td>Cam Akers</td></tr>
-                    <tr><td>Kimani Vidal</td></tr>
-                    <tr><td>Zamir White</td></tr>
-                    <tr><td>Ty Chandler</td></tr>
-                    <tr><td>D'Onta Foreman</td></tr>
-                    <tr><td>MarShawn Lloyd</td></tr>
-                    <tr><td>Latavius Murray</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Running Backs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Cam Akers</td></tr>
+                        <tr><td>Kimani Vidal</td></tr>
+                        <tr><td>Zamir White</td></tr>
+                        <tr><td>Ty Chandler</td></tr>
+                        <tr><td>D'Onta Foreman</td></tr>
+                        <tr><td>MarShawn Lloyd</td></tr>
+                        <tr><td>Latavius Murray</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Wide Receivers</th>
-                    </tr>
-                    <tr><td>Cooper Kupp</td></tr>
-                    <tr><td>Justin Jefferson</td></tr>
-                    <tr><td>Marvin Harrison Jr.</td></tr>
-                    <tr><td>Jaxon Smith-Njigba</td></tr>
-                    <tr><td>Khalil Shakir</td></tr>
-                    <tr><td>Jameson Williams</td></tr>
-                    <tr><td>Tyler Boyd</td></tr>
-                    <tr><td>Javon Baker</td></tr>
-                    <tr><td>Brandon Powell</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Wide Receivers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Cooper Kupp</td></tr>
+                        <tr><td>Justin Jefferson</td></tr>
+                        <tr><td>Marvin Harrison Jr.</td></tr>
+                        <tr><td>Jaxon Smith-Njigba</td></tr>
+                        <tr><td>Khalil Shakir</td></tr>
+                        <tr><td>Jameson Williams</td></tr>
+                        <tr><td>Tyler Boyd</td></tr>
+                        <tr><td>Javon Baker</td></tr>
+                        <tr><td>Brandon Powell</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Tight Ends</th>
-                    </tr>
-                    <tr><td>Jonnu Smith</td></tr>
-                    <tr><td>Pat Freiermuth</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tight Ends</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Jonnu Smith</td></tr>
+                        <tr><td>Pat Freiermuth</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Defense</th>
-                    </tr>
-                    <tr><td>Tampa Bay - DEF</td></tr>
-                    <tr><td>Atlanta - DEF</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Defense</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Tampa Bay - DEF</td></tr>
+                        <tr><td>Atlanta - DEF</td></tr>
+                    </tbody>
                 </table>
             </section>
-            
+
             <!-- Dustin's Team -->
             <section class="team-roster" id="dustin-team">
                 <h3>Dustin (Thanos)</h3>
-                <table class="roster-table">
-                    <tr>
-                        <th>Quarterbacks</th>
-                    </tr>
-                    <tr><td>Baker Mayfield</td></tr>
-                    <tr><td>C.J. Stroud</td></tr>
-                    <tr><td>Geno Smith</td></tr>
-                    <tr><td>Dak Prescott</td></tr>
+                <table class="roster-table" aria-label="Dustin's Team Roster">
+                    <caption class="sr-only">Dustin's Team Roster</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Quarterbacks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Baker Mayfield</td></tr>
+                        <tr><td>C.J. Stroud</td></tr>
+                        <tr><td>Geno Smith</td></tr>
+                        <tr><td>Dak Prescott</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Running Backs</th>
-                    </tr>
-                    <tr><td>Breece Hall</td></tr>
-                    <tr><td>Rachaad White</td></tr>
-                    <tr><td>Jahmyr Gibbs</td></tr>
-                    <tr><td>Kenneth Walker III</td></tr>
-                    <tr><td>David Montgomery</td></tr>
-                    <tr><td>Chuba Hubbard</td></tr>
-                    <tr><td>Tony Pollard</td></tr>
-                    <tr><td>Roschon Johnson</td></tr>
-                    <tr><td>Patrick Taylor Jr.</td></tr>
-                    <tr><td>Christian McCaffrey</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Running Backs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Breece Hall</td></tr>
+                        <tr><td>Rachaad White</td></tr>
+                        <tr><td>Jahmyr Gibbs</td></tr>
+                        <tr><td>Kenneth Walker III</td></tr>
+                        <tr><td>David Montgomery</td></tr>
+                        <tr><td>Chuba Hubbard</td></tr>
+                        <tr><td>Tony Pollard</td></tr>
+                        <tr><td>Roschon Johnson</td></tr>
+                        <tr><td>Patrick Taylor Jr.</td></tr>
+                        <tr><td>Christian McCaffrey</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Wide Receivers</th>
-                    </tr>
-                    <tr><td>Tee Higgins</td></tr>
-                    <tr><td>Garrett Wilson</td></tr>
-                    <tr><td>DJ Moore</td></tr>
-                    <tr><td>DK Metcalf</td></tr>
-                    <tr><td>Christian Watson</td></tr>
-                    <tr><td>Tyler Lockett</td></tr>
-                    <tr><td>Xavier Legette</td></tr>
-                    <tr><td>Marvin Mims Jr.</td></tr>
-                    <tr><td>Rashee Rice</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Wide Receivers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Tee Higgins</td></tr>
+                        <tr><td>Garrett Wilson</td></tr>
+                        <tr><td>DJ Moore</td></tr>
+                        <tr><td>DK Metcalf</td></tr>
+                        <tr><td>Christian Watson</td></tr>
+                        <tr><td>Tyler Lockett</td></tr>
+                        <tr><td>Xavier Legette</td></tr>
+                        <tr><td>Marvin Mims Jr.</td></tr>
+                        <tr><td>Rashee Rice</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Tight Ends</th>
-                    </tr>
-                    <tr><td>Mark Andrews</td></tr>
-                    <tr><td>Noah Gray</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tight Ends</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Mark Andrews</td></tr>
+                        <tr><td>Noah Gray</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Defense</th>
-                    </tr>
-                    <tr><td>Miami - DEF</td></tr>
-                    <tr><td>Cincinnati - DEF</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Defense</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Miami - DEF</td></tr>
+                        <tr><td>Cincinnati - DEF</td></tr>
+                    </tbody>
                 </table>
             </section>
-            
+
             <!-- Tim's Team -->
             <section class="team-roster" id="tim-team">
                 <h3>Tim (Going For…..who cares 😭)</h3>
-                <table class="roster-table">
-                    <tr>
-                        <th>Quarterbacks</th>
-                    </tr>
-                    <tr><td>Jayden Daniels</td></tr>
-                    <tr><td>Justin Herbert</td></tr>
-                    <tr><td>Patrick Mahomes</td></tr>
+                <table class="roster-table" aria-label="Tim's Team Roster">
+                    <caption class="sr-only">Tim's Team Roster</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Quarterbacks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Jayden Daniels</td></tr>
+                        <tr><td>Justin Herbert</td></tr>
+                        <tr><td>Patrick Mahomes</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Running Backs</th>
-                    </tr>
-                    <tr><td>James Conner</td></tr>
-                    <tr><td>Rhamondre Stevenson</td></tr>
-                    <tr><td>Travis Etienne Jr.</td></tr>
-                    <tr><td>Zach Charbonnet</td></tr>
-                    <tr><td>Kareem Hunt</td></tr>
-                    <tr><td>Tank Bigsby</td></tr>
-                    <tr><td>Braelon Allen</td></tr>
-                    <tr><td>Tank Dell</td></tr>
-                    <tr><td>Tyrone Tracy Jr.</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Running Backs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>James Conner</td></tr>
+                        <tr><td>Rhamondre Stevenson</td></tr>
+                        <tr><td>Travis Etienne Jr.</td></tr>
+                        <tr><td>Zach Charbonnet</td></tr>
+                        <tr><td>Kareem Hunt</td></tr>
+                        <tr><td>Tank Bigsby</td></tr>
+                        <tr><td>Braelon Allen</td></tr>
+                        <tr><td>Tank Dell</td></tr>
+                        <tr><td>Tyrone Tracy Jr.</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Wide Receivers</th>
-                    </tr>
-                    <tr><td>Courtland Sutton</td></tr>
-                    <tr><td>Ladd McConkey</td></tr>
-                    <tr><td>DeMario Douglas</td></tr>
-                    <tr><td>Jaylen Waddle</td></tr>
-                    <tr><td>Michael Pittman Jr.</td></tr>
-                    <tr><td>Diontae Johnson</td></tr>
-                    <tr><td>Parker Washington</td></tr>
-                    <tr><td>Devaughn Vele</td></tr>
-                    <tr><td>Christian Kirk</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Wide Receivers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Courtland Sutton</td></tr>
+                        <tr><td>Ladd McConkey</td></tr>
+                        <tr><td>DeMario Douglas</td></tr>
+                        <tr><td>Jaylen Waddle</td></tr>
+                        <tr><td>Michael Pittman Jr.</td></tr>
+                        <tr><td>Diontae Johnson</td></tr>
+                        <tr><td>Parker Washington</td></tr>
+                        <tr><td>Devaughn Vele</td></tr>
+                        <tr><td>Christian Kirk</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Tight Ends</th>
-                    </tr>
-                    <tr><td>Brenton Strange</td></tr>
-                    <tr><td>Cole Kmet</td></tr>
-                    <tr><td>Will Dissly</td></tr>
-                    <tr><td>Evan Engram</td></tr>
-                    <tr><td>Dallas Goedert</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tight Ends</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Brenton Strange</td></tr>
+                        <tr><td>Cole Kmet</td></tr>
+                        <tr><td>Will Dissly</td></tr>
+                        <tr><td>Evan Engram</td></tr>
+                        <tr><td>Dallas Goedert</td></tr>
+                    </tbody>
                     
-                    <tr>
-                        <th>Defense</th>
-                    </tr>
-                    <tr><td>Detroit - DEF</td></tr>
-                    <tr><td>Denver - DEF</td></tr>
+                    <thead>
+                        <tr>
+                            <th scope="col">Defense</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Detroit - DEF</td></tr>
+                        <tr><td>Denver - DEF</td></tr>
+                    </tbody>
                 </table>
             </section>
         </div>

@@ -56,6 +56,13 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    transition: color 0.3s ease, transform 0.2s ease; /* Add transition */
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+    transform: translateY(-2px); /* Slight lift effect */
 }
 
 main {
@@ -101,6 +108,7 @@ main {
     position: relative;
     z-index: 2;
 }
+
  /* Responsive Background Images */
  @media (min-width: 768px) {
     .hero {
@@ -255,6 +263,18 @@ footer {
     color: white;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 /* Under Construction Page */
 .construction-container {
     text-align: center;
@@ -283,6 +303,14 @@ footer {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.champion-heading {
+    font-size: 38px; 
+    margin-bottom: 10px;
+    color: white; 
+    z-index: 2;
+    position: relative;
 }
 
 .champions-grid {
@@ -851,6 +879,15 @@ footer {
     background: var(--primary-dark);
 }
 
+/* Button transitions */
+button, .submit-button, #vote-button, .rules-suggestion button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .submit-button:hover, #vote-button:hover, .rules-suggestion button:hover {
+    transform: scale(1.05);
+}
+
 /* League Officials Styles */
 .league-officials {
     background: white;
@@ -874,6 +911,16 @@ footer {
     color: var(--primary-color);
     margin-top: 0;
     margin-bottom: 5px;
+}
+
+/* Card hover effects */
+.team-roster, .champion-card, .contact-form, .league-officials, .faq {
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.team-roster:hover, .champion-card:hover, .contact-form:hover, .league-officials:hover, .faq:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
 }
 
 /* FAQ Styles */
