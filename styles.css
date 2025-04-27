@@ -715,6 +715,7 @@ footer {
     margin-right: 5px;
     margin-bottom: 5px;
 }
+
 @media (max-width: 768px) {
     .draft-table {
         overflow-x: auto;
